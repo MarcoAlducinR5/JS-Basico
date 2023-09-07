@@ -17,3 +17,9 @@ var nuevaLongitud = frutas.unshift("uvas");
 var borrarFruta = frutas.shift("uvas");
 
 var posicion = frutas.indexOf("cereza");
+
+function solution(arraySecreto) {
+    return typeof(arraySecreto[0]) === "string";
+}
+solution(["Huevo", "Gallina", "Vaca"])
+solution([1, "Gallina", "Vaca"])
