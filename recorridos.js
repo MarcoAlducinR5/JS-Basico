@@ -24,3 +24,28 @@ var nombreArticulos = articulos.map(function (articulo) {
 
 nombreArticulos
 ['Bici', 'TV', 'Libro', 'Celular', 'Laptop', 'Teclado', 'Audifonos']
+
+var encuentraArticulo = articulos.find(function (articulo) {
+    return articulo.nombre === "Laptop";
+});
+
+encuentraArticulo
+[{nombre: 'Laptop', costo: 20000}]
+
+articulos.forEach(function (articulo) {
+    console.log(articulo.nombre);
+});
+//VM1128:2 Bici
+//VM1128:2 TV
+//VM1128:2 Libro
+//VM1128:2 Celular
+//VM1128:2 Laptop
+//VM1128:2 Teclado
+//VM1128:2 Audifonos
+
+var articulosBaratos = articulos.some(function (articulo) {
+    return articulo.costo <= 700;
+})
+
+articulosBaratos
+true
