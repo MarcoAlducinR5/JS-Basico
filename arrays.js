@@ -23,3 +23,27 @@ function solution(arraySecreto) {
 }
 solution(["Huevo", "Gallina", "Vaca"])
 solution([1, "Gallina", "Vaca"])
+
+function solution(cars) {
+    // 👇 Este es el código que no funciona
+    return cars.filter(function (car) {
+        return car.licensePlate ? car.drivingLicense = true : car.drivingLicense = false;
+    });
+}
+
+const cars = [
+    {
+      color: 'red',
+      brand: 'Kia',
+    },
+    {
+      color: 'gray',
+      brand: 'Chevrolet',
+      licensePlate: 'AAA111',
+    },
+    {
+      licensePlate: 'RGB255',
+    },
+];
+
+solution(cars);
